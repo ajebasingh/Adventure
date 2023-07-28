@@ -11,13 +11,14 @@ def welcome(name):
     :param name:
     :return:
     """
-    print(f'Hi, {name}!  ')
+    print(f'Hi, {name}! ')
 
 
 def perform_action(action):
     if action == 1:
         global power
         power += random.randint(1, 3)
+        print("You've received the power: Immunity to Sarcasm... This sure looks useful!")
     if action == 2:
         global life
         life -= random.randint(1, 3)
