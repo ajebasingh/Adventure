@@ -31,7 +31,8 @@ def perform_action(action):
     elif action == 2:
         global life
         life -= random.randint(1, 3)
-        print("You have lost a heart.")
+        print(f'You appear to be deathly allergic to even numbers. This may or may not be an issue moving forward. '
+              f'Your current health is {life}')
     else:
         1 == ("slot 1")
         2 == ("slot 2")
@@ -43,7 +44,7 @@ if __name__ == '__main__':
     welcome('PyCharm')
     action = int(input("Enter an action: "))
 
-    while action != 0:
+    while action > 0:
         perform_action(action)
         action = int(input("Enter an action: "))
 
