@@ -25,6 +25,8 @@ def perform_action(action):
         print("You appear to be deathly allergic to even numbers. This may or may not be an issue moving forward.")
     if action == 3:
         print ("boing, boing, boing, boing, boing...")
+    
+
 
 # Run Adventure!
 if __name__ == '__main__':
