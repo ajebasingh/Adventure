@@ -21,7 +21,7 @@ def perform_action(action):
     if action == 2:
         global life
         life -= random.randint(1, 3)
-
+    print("You have lost a heart.")
 
 # Run Adventure!
 if __name__ == '__main__':
