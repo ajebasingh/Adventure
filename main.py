@@ -18,7 +18,23 @@ def power_level(level):
     if level == 1:
         print("You've received the power: Immunity to Sarcasm... This sure looks useful!")
     elif level == 2:
-        print("")
+        print("You've received the power: Plant Empathy! You can now hear plants asking to be watered!")
+    elif level == 3:
+        print("You've received the power: Resistance to Grass Damage! You can now touch grass!")
+    elif level == 4:
+        print("You've received the power: Dog Mindreader! You can now read a dog's thoughts!")
+    elif level == 5:
+        print("You've received the power: Stick to Walls! You can now stick to walls!")
+    elif level == 6:
+        print("You've received the power: Moonwalker! You can now moonwalk!")
+    elif level == 7:
+        print("You've received the power: 3x Normal Appetite! Meals now cost 3x as much!")
+    elif level == 8:
+        print("You've received the power: Race Detector! You can now determine the ethnicity down to the 0.01th of any person you see!")
+    elif level == 9:
+        print("You didn't get a power this time, but you did get a conragulations message from me for getting this far...")
+    elif level == 10:
+        print("Your levels are maxed out! You now have a golden aura and can speak Swahili!")
     else:
         print("wow")
 
