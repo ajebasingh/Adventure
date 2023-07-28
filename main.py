@@ -38,4 +38,3 @@ if __name__ == '__main__':
         action = int(input("Enter an action: "))
 
     print(f"Your final score: {power}")
-
