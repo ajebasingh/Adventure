@@ -11,7 +11,7 @@ def welcome(name):
     :param name:
     :return:
     """
-    print(f'Hi, {name}!  ')
+    print(f'Hi, {name}! ')
 
 
 def perform_action(action):
