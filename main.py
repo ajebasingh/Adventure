@@ -30,7 +30,7 @@ def power_level(level):
     elif level == 7:
         print("You've received the power: 3x Normal Appetite! Meals now cost 3x as much!")
     elif level == 8:
-        print("You've received the power: Race Detector! You can now determine the ethnicity of any person you see!")
+        print("You've received the power: ...")
     elif level == 9:
         print("You didn't get a power this time, but you did get a pat on the back.")
     elif level == 10:
@@ -77,4 +77,4 @@ if __name__ == '__main__':
         perform_action(action)
         action = int(input("Enter an action: "))
 
-    print(f"You have died. Your final score is {power}")
+    print(f"Your final score is: {power} (1, 1000)")
