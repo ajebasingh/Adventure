@@ -30,9 +30,9 @@ def power_level(level):
     elif level == 7:
         print("You've received the power: 3x Normal Appetite! Meals now cost 3x as much!")
     elif level == 8:
-        print("You've received the power: Race Detector! You can now determine the ethnicity down to the 0.01th of any person you see!")
+        print("You've received the power: Race Detector! You can now determine the ethnicity of any person you see!")
     elif level == 9:
-        print("You didn't get a power this time, but you did get a conragulations message from me for getting this far...")
+        print("You didn't get a power this time, but you did get a pat on the back.")
     elif level == 10:
         print("Your levels are maxed out! You now have a golden aura and can speak Swahili!")
     else:
