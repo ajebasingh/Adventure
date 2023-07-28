@@ -32,5 +32,5 @@ if __name__ == '__main__':
         perform_action(action)
         action = int(input("Enter an action: "))
 
-    print(f"Your final score: {power}")
+    print(f"Your final score is: {power} (1, 1000)")
 
