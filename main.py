@@ -11,7 +11,7 @@ def welcome(name):
     :param name:
     :return:
     """
-    print(f'Hi, {name}! Your finally up! You should check in with the higher-ups for a new mission.')
+    print(f'Hi, {name}! Your finally up! You should check in with the higher-ups of Chaos for a new mission.')
 
 
 def perform_action(action):
