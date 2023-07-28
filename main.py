@@ -2,7 +2,7 @@
 import random
 
 power = 0
-life = 10
+life = 11
 
 
 def welcome(name):
