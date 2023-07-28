@@ -14,11 +14,20 @@ def welcome(name):
     print(f'Hi, {name}! ')
 
 
+def power_level(level):
+    if level == 1:
+        print("You've received the power: Immunity to Sarcasm... This sure looks useful!")
+    elif level == 2:
+        print("")
+    else:
+        print("wow")
+
+
 def perform_action(action):
     if action == 1:
         global power
         power += random.randint(1, 3)
-        print("You've received the power: Immunity to Sarcasm... This sure looks useful!")
+        power_level(power)
     elif action == 2:
         global life
         life -= random.randint(1, 3)
