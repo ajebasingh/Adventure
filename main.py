@@ -18,10 +18,12 @@ def perform_action(action):
     if action == 1:
         global power
         power += random.randint(1, 3)
-    if action == 2:
+    elif action == 2:
         global life
         life -= random.randint(1, 3)
-
+    else:
+    1 == ("slot 1") 2 == ("slot 2") 3 == ("slot 3")
+        print("you can only use 1,2 and 3")
 
 # Run Adventure!
 if __name__ == '__main__':
