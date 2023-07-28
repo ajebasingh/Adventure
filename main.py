@@ -11,19 +11,18 @@ def welcome(name):
     :param name:
     :return:
     """
-    print(f'Hi, {name}!  ')
+    print(f'Hi, {name}! ')
 
 
 def perform_action(action):
     if action == 1:
         global power
         power += random.randint(1, 3)
-    elif action == 2:
+        print("You've received the power: Immunity to Sarcasm... This sure looks useful!")
+    if action == 2:
         global life
         life -= random.randint(1, 3)
-    else:
-    1 == ("slot 1") 2 == ("slot 2") 3 == ("slot 3")
-        print("you can only use 1,2 and 3")
+    print("You have lost a heart.")
 
 # Run Adventure!
 if __name__ == '__main__':
@@ -35,4 +34,3 @@ if __name__ == '__main__':
         action = int(input("Enter an action: "))
 
     print(f"Your final score: {power}")
-
