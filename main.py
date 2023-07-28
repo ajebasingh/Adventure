@@ -12,7 +12,7 @@ def welcome(name):
     :param name:
     :return:
     """
-    print(f'Hi, {name}! Your finally up! You should check in with the higher-ups of Chaos for a new mission.')
+    print(f"Hi, {name}! You're finally up! You should check in with the higher-ups of Chaos for a new mission.")
 
 
 def power_level(level):
@@ -73,13 +73,18 @@ if __name__ == '__main__':
     welcome('PyCharm')
     action = int(input("Enter an action: "))
 
+
     while life > 0:
         perform_action(action)
-        action = int(input("Enter an action: "))
+        try:
+            action = int(input("Enter an action: "))
+        except TypeError:
+            print("Please type a number")
+        except ValueError:
+            print("You can only use 1, 2, or 3")
 
-    if life < 1:
-        print(f"You have died. Your final score is..."
-          f" power: {power}"
-          f"jump: {jump}")
+
+if life < 1:
+        print(f"You have died. Your final score is... power: {power} jump: {jump}")
 #Let's find the best way to make the game end when life is less than zero
 #Otherwise, we should probably change what life is to begin with
