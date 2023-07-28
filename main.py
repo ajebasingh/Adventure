@@ -11,7 +11,7 @@ def welcome(name):
     :param name:
     :return:
     """
-    print(f'Hi, {name}! ')
+    print(f'Hi, {name}! Your finally up! You should check in with the higher-ups of Chaos for a new mission.')
 
 
 def power_level(level):
@@ -47,7 +47,10 @@ def perform_action(action):
     elif action == 2:
         global life
         life -= random.randint(1, 3)
-        print("You have lost a heart.")
+        print(f'You appear to be deathly allergic to even numbers. This may or may not be an issue moving forward. '
+              f'Your current health is {life}')
+    elif action == 3:
+        print("boing, boing, boing, boing, boing...")
     else:
         1 == ("slot 1")
         2 == ("slot 2")
@@ -59,8 +62,8 @@ if __name__ == '__main__':
     welcome('PyCharm')
     action = int(input("Enter an action: "))
 
-    while action != 0:
+    while action > 0:
         perform_action(action)
         action = int(input("Enter an action: "))
 
-    print(f"Your final score: {power}")
+    print(f"You have died. Your final score is {power}")
