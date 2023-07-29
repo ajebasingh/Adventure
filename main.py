@@ -39,6 +39,7 @@ def power_level(level):
     else:
         print("wow")
 
+
 def process_action_3():
     global jump
     jump_delta = random.randint(-2, 3)
@@ -48,7 +49,9 @@ def process_action_3():
         print("All this jumping is exhausting!")
     elif jump_delta < 0:
         print("Your jumping prowess is increasing!")
-#This function affects the jump!
+
+
+# This function affects the jump!
 # If anyone wants to change it so that jump cannot be less than zero, that would be a good next step.
 
 
@@ -64,15 +67,12 @@ def perform_action(action):
               f'Your current health is {life}')
     elif action == 3:
         process_action_3()
-        
-    else:
-        print("you can only use 1,2 and 3")
+
 
 # Run Adventure!
 if __name__ == '__main__':
     welcome('PyCharm')
     action = int(input("Enter an action: "))
-
 
     while life > 0:
         perform_action(action)
@@ -83,8 +83,9 @@ if __name__ == '__main__':
         except ValueError:
             print("You can only use 1, 2, or 3")
 
-
-if life < 1:
+    if life < 1:
         print(f"You have died. Your final score is... power: {power} jump: {jump}")
-#Let's find the best way to make the game end when life is less than zero
-#Otherwise, we should probably change what life is to begin with
+
+# Let's find the best way to make the game end when life is less than zero
+
+# Otherwise, we should probably change what life is to begin with
